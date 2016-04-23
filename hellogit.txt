@@ -1,1 +1,2 @@
 git is a distributed control software
+git is open software
