@@ -1,0 +1,365 @@
+*{
+	margin: auto 0px;
+	padding: 0px;
+}
+body{
+	background-color:#ffe;	
+}
+/*头部，要求固定*/
+#header{
+	height: 50px;
+	text-align: center;
+	background-color:#D2B48C;
+	
+}
+/*鲁式餐馆购物车*/
+#header .cartTitle{
+	font-size:30px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight:bold;
+	font-style:italic;
+	color:#331918;
+	text-align:center;
+	background: url("../images/icon3.png") no-repeat scroll 560px 15px;
+}
+/*fabout--div*/
+#allCom .fabout{
+	margin-left:200px;
+	padding-bottom:10px;	
+}
+/*全部菜品*/
+
+#allCom .allcart a{
+	font-size:20px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight:bold;
+	color:tan;	
+	text-decoration:none;
+	padding:0px 10px 5px 10px;	
+	border-bottom:1px solid tan;
+	border-radius:5px;
+}
+
+/*table部分*/
+#allCom table{
+	margin-left:200px;
+	margin-top:12px;
+	margin-bottom:200px;
+}
+#tnav tr td{
+	padding-bottom:10px;
+}
+#tnav tr .num{
+	padding:0px 40px 10px 40px;
+}
+
+#tnav .allsel{
+	padding-right:50px;	
+	padding-left:20px;
+}
+#tnav .desc{
+	width:350px;	
+}
+#tnav .realprice{
+	padding:0px 30px 10px 20px;	
+}
+#tnav .operate{
+	padding:0 40px 10px 20px;
+}
+#tnav .count{
+	padding-left:35px;
+	padding-right:40px;	
+}
+/*#content tr{
+	height:100px;
+}*/
+#content tr td{
+	border-top:1px solid #999;
+	border-radius:5px;
+	padding-top:5px;
+}
+#desc{
+	width:100px;
+	height:150px;	
+}
+#content #allsel{
+	padding-left:20px;	
+}
+#fphoto{
+	width:200px;
+	height:150px;
+	border-radius:5px;
+	float:left;
+}
+#fname{
+	width:150px;
+	display:inline-block;	
+	float:left;
+	position:relative;
+	left:20px;
+	top:60px;
+}
+
+#realprice{
+	font-size:18px;
+	color:red;
+	padding-left:25px;
+}
+
+#content .count{
+	text-align:center;
+	padding-right:20px;	
+}
+
+#num{
+	padding:0px 54px 0px 46px;	
+}
+#num span{
+	display:inline-block;
+	width:20px;
+	padding:10px;
+	border-radius:20px;	
+	background:#CCC;
+	text-align:center;
+}
+#smallCount{
+	padding-left:35px;
+	padding-right:30px;
+	color:red;
+	font-size:18px;
+}	
+#smallCount span{
+	display:inline-block;
+	width:50px;
+	text-align:left;	
+}
+.operate{
+	text-align:center;
+}
+#operate span:nth-child(1){
+	position:relative;
+	top:-40px;
+	left:30px;
+	cursor:pointer;
+}
+#operate span:nth-child(2){
+	position:relative;
+	top:-5px;
+	right:2px;
+	cursor:pointer;	
+}
+#operate span:nth-child(3){
+	position:relative;
+	right:35px;	
+	top:30px;
+	cursor:pointer;
+	
+}
+
+#paid{
+	margin-top:10px;
+	margin-left:180px;
+	margin-right:180px;	
+	padding-bottom:8px;
+	height:60px;
+	text-align:right;
+	background:#D2B48C;
+	position:fixed;
+	z-index:999;
+	left:0;
+	right:0;
+	bottom:60px;
+	border-radius:10px;
+}
+#paid #fselect{
+	font-size:18px;	
+}
+#paid #fselect span{
+	display:inline-block;
+	width:30px;
+	height:35px;
+	font-size:24px;
+	color:red;
+	padding:0px 8px;	
+	text-align:center;
+}
+#paid #fcount{
+	margin:10px 20px;
+	font-size:18px;
+}
+#paid #fcount span{
+	display:inline-block;
+	width:52px;
+	font-size:22px;
+	color:red;	
+	text-align:left;
+	padding-left:10px;
+}
+#paid #fpaid{
+	display:inline-block;
+	margin-top:5px;
+	margin-right:160px;
+	color:#C60;
+	font-size:24px;
+	font-weight:bold;	
+	background-color:tan;
+	padding:10px 15px;
+	border-radius:5px;
+	cursor:pointer;
+	
+}
+#bottom {
+	padding-top:5px;
+	padding-bottom:15px;
+	position:fixed;
+	z-index:999;
+	left:0;
+	right:0;
+	bottom:0px;	
+	background:url("../images/body.png");
+	/*background-color:#331918;*/
+
+}
+#bottom div{
+	width: 100px;
+	height:50px;
+	float: left;
+	margin-left: 80px;
+	padding-left:20px;
+}
+#bottom div ul{
+	list-style:none;
+		
+}
+#bottom div ul li{
+	display:inline-block;
+}
+#bottom div ul li a{
+	text-decoration:none;
+	color:black;	
+}
+#bottom .bottom1{
+	margin-left:400px;
+}
+
+#payfor{
+	border:1px solid tan;
+	border-radius:5px;
+	width:50%;
+	height:380px;
+	position:absolute;
+	left:25%;
+	top:10%;
+	display:none;
+	background-color:#ffe;
+	position:fixed;
+}	
+
+.address_header{
+	font-size:120%;	
+	font-weight:bold;
+	padding-left:8%;
+	padding-top:2%;
+}
+.address_header span{
+	background:url("../images/close.png");	
+}
+.address_content{
+	padding-left:10%;	
+}
+.address_content div{
+	margin-top:20px;	
+}
+.address_content label{
+	font-size:100%;	
+	margin-right:20px;	
+}
+.address_content input{
+	border:none;
+	border:1px solid tan;
+	border-radius:3px;
+	height:35px;
+	line-height:30px;
+	padding-left:10px;	
+}
+.address_content .addname label{
+	
+}
+.address_content .addname input{
+	width:200px;
+}
+.address_content .sex label{
+	
+}	
+.address_content .sex input{
+	line-height:0px;
+	height:0px;
+	margin-right:8px;
+	margin-left:5px;
+}
+.address_content .field{
+		
+}	
+.address_content .field label{
+	
+}
+.address_content .field img{
+	width:18px;
+	height:22px;
+	position:absolute;
+	margin-top:6px;
+	margin-left:5px;
+}
+.address_content .field input{
+	width:200px;	
+	padding-left:26px;
+}
+.address_content .detailadd{
+	margin-left:-30px;	
+}
+.address_content .detailadd label{
+	text-align:left;
+	margin-right:17px;
+}
+.address_content .detailadd input{
+	width:250px;
+}
+
+.address_content .teleph{
+	margin-left:-18px;	
+}
+.address_content .teleph label{
+	
+}
+.address_content .teleph input{
+	width:200px;	
+}
+.address_content .teleph button{
+	border:none;
+	border:1px solid tan;
+	border-radius:5px;
+	background-color:tan;
+	cursor:pointer;
+	margin-left:15px;
+	padding:5px;
+}
+.address_content .btn{
+	margin-left:55px;	
+}
+.address_content .btn button{
+	border:none;
+	background-color:tan;
+	border-radius:5px;
+	cursor:pointer;
+	background-color:tan;
+	padding:5px 15px;
+	margin-right:30px;
+}
+
+
+
+
+
+
+
+

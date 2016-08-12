@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>卤鱼有约美食网</title>
+        <link rel="shortcut icon" href="../images/icon.png"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopping.css"/>
+        <script type="text/javascript" src="../js/yclib.js"></script>
+        <script type="text/javascript" src="../js/lib.js"></script>
+        <script type="text/javascript" src="../js/shopping.js"></script>
+    
+	</head>
+	<body>
+		<div id="header">
+			<p class="cartTitle">购物车</p>
+        </div>
+		
+		<div id="allCom">
+            <div class="fabout">
+            	<span class="allcart"><a href="#">全部菜品</a></span>
+			</div>
+            <table id="mytable" cellpadding="0" cellspacing="0">
+				<thead id="tnav">
+					<tr>
+						<td class="allsel"><input type="checkbox" onClick="allsel(this.checked)"/>&nbsp;全选</td>
+						<td class="desc">菜品信息</td>
+						<td class="realprice">单&nbsp;&nbsp;价</td>
+						<td class="num">数&nbsp;&nbsp;量</td>
+						<td class="count">小&nbsp;&nbsp;计</td>
+						<td class="operate">操&nbsp;&nbsp;作</td>
+					</tr>
+				</thead>
+				
+				<tbody id="content">
+					
+				</tbody>
+			</table>
+            
+            <div id="paid">
+				<span id="fselect">已选商品<span>0</span>件</span>
+				<span id="fcount">合计&yen;<span>0</span></span>
+				<span id="fpaid">结&nbsp;&nbsp;算</span>
+            </div>
+            
+          	<div id="payfor">
+            	<div class="address_header">收货地址
+                	<span></span>
+                </div>
+                <div class="address_content">
+                	<div class="addname">
+                    	<label>姓名</label>
+                        <input placeholder="请输入您的姓名"/>
+                	</div>
+                	<div class="sex"><label>性别</label>
+                    				<input id="male" type="radio" name="sex" value="1"/><label>先生</label>
+                                    <input id="female" type="radio" name="sex" value="2"/><label>女士</label>
+                    </div>
+                    <div class="field">
+                    	<label>位置</label>
+                        <img src="../images/ads.png"/>
+                        <input placeholder="请输入小区、大厦或学校"/>
+                   	</div>
+                    <div class="detailadd">
+                    	<label>详细地址</label>
+                        <input placeholder="单元、门牌号"/>
+                    </div>
+                    <div class="teleph">
+                    	<label>手机号</label>
+                        <input placeholder="请输入您的手机号"/>
+                        <button>添加更多电话</button>
+                    </div>
+                    <div class="btn">
+                    	<button id="baocun">保存</button>
+                        <button id="quxiao">取消</button>
+                    </div>
+                </div>
+          	</div>
+	
+        </div>
+        <div id="bottom">
+				<div class="bottom1">
+					<p>友情链接</p>
+					<ul>
+						<li><a href="">仙缘阁餐厅</a></li><br />
+						<li><a href="">鲜味王餐厅</a></li><br />
+						
+					</ul>
+				</div>
+				<div class="bottom2">
+					<p>版权所有</p>
+					<ul>
+						<li><a href="">陈思玉</a></li><br />
+						<li><a href="">鲁周娟</a></li><br />
+						
+					</ul>
+				</div>
+				<div class="bottom3">
+					<p>联系QQ</p>
+					<ul>
+						<li><a href="">1067038906</a></li><br />
+						<li><a href="">1205582191</a> </li>
+					</ul><br />
+				</div>
+			
+       	</div>
+        
+        
+        <script type="text/javascript">
+			//全选
+			function allsel(isChecked){
+				var selinp=document.getElementsByTagName("input");
+				for(var i=0;i<selinp.length;i++){
+					if(selinp[i].type=="checkbox"){
+						selinp[i].checked=isChecked;	
+					}	
+				}
+				
+			}
+		
+			yc.addEvent("fpaid","click",function(){
+				
+				var paid=yc.$("fpaid");
+				//alert("aa");
+				var payfor=yc.$("payfor");
+				yc.toggleDisplay("payfor","block");
+			});
+			
+			yc.addEvent("baocun","click",function(){
+				var baoc=yc.$("baocun");
+				var payfor=yc.$("payfor");
+				yc.toggleDisplay("payfor","none");
+				alert("订购成功");
+			});
+			yc.addEvent("quxiao","click",function(){
+				var quxiao=yc.$("quxiao");
+				yc.toggleDisplay("payfor","none");
+				
+			});
+		</script>
+	</body>
+    
+</html>
