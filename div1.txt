@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 div1
 I am div1
+=======
+I am div1 in a branch
+>>>>>>> a
+I am also good

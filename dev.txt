@@ -1,5 +1,9 @@
 I am a dev branch dev.txt
 my dev branch dev.txt
 hello dev branch
+<<<<<<< HEAD
 I am dev
 你好
+=======
+dev.txt in a branch
+>>>>>>> a
