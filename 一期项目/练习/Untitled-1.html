@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<style>
+*{
+	margin:0px;
+	padding:0px;
+}
+	.menu{
+		background:#CF9;
+		width:600px;
+		height:40px;
+		margin:0 auto;
+	}
+	.menu ul{
+		list-style:none;
+	}
+	.menu ul li{
+		float:left;
+		line-height:40PX;
+		text-align:center;
+		position:relative;
+		
+	}
+	.menu a{
+		text-decoration:none;
+		color:#000;
+		display:block;
+		width:90px;
+	}
+	.menu a:hover{
+		color:#600;
+		background:#6F6;
+	}
+	.menu ul li ul{
+		width:90px;
+		position:absolute;
+		top:40px;
+		left:0px;
+		display:none;
+		}
+	.menu ul li ul li{
+		float:none;
+		border-left:none;
+		margin-top:2px;
+		
+	}
+</style>
+<script>
+	function showsubmenu(li){
+		var submenu=li.getElementsByTagName("ul")[0];
+		submenu.style.display="block";
+		}
+	function hidesubmenu(li){
+		var submenu=li.getElementsByTagName("ul")[0];
+		submenu.style.display="none";
+		}
+
+</script>
+<body>
+	<div class="menu">
+    	<ul>
+        	<li onMouseOver="showsubmenu(this)" onMouseOut="hidesubmenu(this)"><a href="">首页</a>
+            	<ul>
+                	<li><a href="">今题</a></li>
+                    <li><a href="">但刀法</a></li>
+                    <li><a href="">成为富翁</a></li>
+                </ul>
+            
+            
+            
+            </li>
+            <li onMouseOver="showsubmenu(this)" onMouseOut="hidesubmenu(this)"><a href="">课程大厅</a>
+            	<ul>
+                	<li><a href="">今题</a></li>
+                    <li><a href="">但刀法</a></li>
+                    <li><a href="">成为富翁</a></li>
+                </ul>
+            
+            </li>
+            <li onMouseOver="showsubmenu(this)" onMouseOut="hidesubmenu(this)"><a href="">学习中心</a>
+            	<ul>
+                	<li><a href="">今题</a></li>
+                    <li><a href="">但刀法</a></li>
+                    <li><a href="">成为富翁</a></li>
+                </ul>
+            </li>
+           
+        
+        </ul>
+    </div>
+
+</body>
+</html>

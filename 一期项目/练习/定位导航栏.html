@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	.nav{
+		width:100%;
+		height:50px;
+		position:relative;
+		background:#999;
+	}
+	.nav .yi{
+		position:absolute;
+		z-index:1;
+	}
+	.nav ul{
+		padding:0;
+		margin:0;
+		
+	}
+	
+	.nav .one{
+		position:absolute;
+	}
+	.nav .one:hover{
+		background:#CCF;
+		color:#6C3;
+	}
+	.nav .two{
+		display:none;
+		background:#F66;
+		width:400px;
+		height:100px;
+		z-index:1;
+	}
+	.nav .two:hover{
+		background:#CC6;
+	}
+	.nav .one:hover .two{
+		display:block;
+		position:absolute;
+		z-index:1;
+	}
+
+</style>
+</head>
+
+
+<body>
+	<div class="nav">
+    	<ul class="yi">
+        	<li class="one">首页
+            	<div class="two">
+                				第二级
+                       <div></div>
+                
+                </div>
+                <div class="two">
+                				第二级
+                       <div></div>
+                
+                </div>
+            
+            </li>
+            <li></li>
+        
+        
+        </ul>
+    
+    </div>
+</body>
+</html>
